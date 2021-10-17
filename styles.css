@@ -17,3 +17,66 @@ body {
     position: relative;
     font-family: 'verdana', sans-serif;
 }
+
+.header {
+    position: relative;
+    color: white;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.header .title {
+    height: 40px;
+    width: 100%;
+    background-color: var(--mainColor);
+    padding: 10px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 0.5px 0.5px 0.5px #333;
+    text-align: right;
+}
+
+.navbar {
+    position:sticky;
+    position: -webkit-sticky;
+    top:0;
+    background-color:#333;
+    height: 50px;
+    width: 100%;
+    box-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+    padding: 5px 0;
+}
+
+.nav-sections {
+    height: 100%;
+    width: 100%;
+    list-style-type: none;
+    overflow: hidden;
+    text-align: center;
+}
+
+.nav-sections li {
+    height: 100%;
+    float: left;
+    margin: 10px 20px;
+    padding-right:40px;
+    border-right: 0.5px solid grey;
+}
+
+.sections-title {
+    font-weight: bolder;
+}
+
+.nav-section {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    color: white;
+}
+
+.nav-section:hover {
+    color: var(--complementaryColor);
+    font-weight: bold;
+}
+
+
