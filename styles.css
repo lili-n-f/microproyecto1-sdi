@@ -17,3 +17,97 @@ body {
     position: relative;
     font-family: 'verdana', sans-serif;
 }
+
+section {
+    width:100%;
+    position:relative;
+    display:flex;
+    justify-content: center;
+    align-content: center;
+    padding: 10px;
+}
+
+.contactMe {
+    background-color: var(--lightColor);
+    width: 70%;
+    padding: 30px;
+    margin:20px;
+    color: black;
+    line-height: 50px;
+    font-size: 1.5em;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
+}
+
+#contactMe {
+    font-size: 60px;
+    font-family: 'Roboto Condensed', 'sans serif';
+    letter-spacing: 2px;
+}
+
+.contactForm, .otherContactInfo {
+    width: 70%;
+    margin:auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contactForm p {
+    color: rgba(0,0,0,0.4);
+    font-size: 15px;
+}
+
+#nameInput, #emailInput {
+    display: block;
+    height: 30px;
+    padding: 0px 5px;
+    border-radius: 5px;
+}
+
+textarea {
+    display: block;
+    resize: none;
+    padding: 5px 5px;
+    border-radius: 5px;
+}
+
+#submitButton {
+    cursor: pointer;
+    align-self: flex-end;
+    font-size: 25px;
+    margin-top: 30px;
+    background-color: var(--mainColor);
+    padding: 5px 10px;
+    color:white;
+    border: none;
+    border-radius: 5px;
+}
+
+#submitButton:hover {
+    background: var(--complementaryColor);
+}
+.otherContactInfo .contactInfo {
+    display: block;
+    text-align: center;
+}
+
+.box {
+    width: 95%;
+    position: relative;
+    padding: 10px 0px;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.box::after {
+    content: "";
+    clear: both;
+    display: table;    
+}
+
+.logo {
+    width: 10%;
+    float:left;
+}

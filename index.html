@@ -6,12 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio Liliana Nóbrega</title>
     <link rel="stylesheet" href="styles.css">
-    <script ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
     <section>
         <div class="contactMe">
             <h1 id="contactMe">Contacto</h1>
+            <hr>
+            <br>
+            <form method="post" class="contactForm" onsubmit="return validateForm()">
+                <h2>Formulario de contacto</h2>
+                <hr>
+                <label for="name">Nombre *</label>
+                <input type="text" id="nameInput" title="Ingrese aquí su nombre" name="name" placeholder="Nombre Apellido" required>
+                <label for="email">Correo electrónico *</label>
+                <input type="email" id="emailInput" title="Ingrese aquí su email" name="email" placeholder="nombre@correo.com" required>
+                <label for="msg">Escriba su mensaje: *</label>
+                <textarea name="msg" id="msgInput" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                <input type="submit" id="submitButton">
+                <p>* campos requeridos</p>
+                <hr>
+                <br>
+            </form>
+            <div class="otherContactInfo">
+                <h2>Otra forma de contacto</h2>
+                <hr>
+                <br>
+                <div class="box">
+                    <img src="img/instagram.svg" alt="Instagram" class="logo">
+                    <a target="_blank" href="https://www.instagram.com/lili.n.f/?hl=es" class="contactInfo">Sígueme en Instragram: @lili-n-f</a>
+                </div>
+                <div class="box">
+                    <img src="img/linkedin.svg" alt="Linkedin" class="logo">
+                    <a target="_blank" href="https://www.linkedin.com/in/liliana-n%C3%B3brega-19b83b19a/?midToken=AQF30HLvZkcpAw&midSig=2ffLjGGrNHEFY1&trk=eml-email_pymk_02-header-50-profile&trkEmail=eml-email_pymk_02-header-50-profile-null-cz0evb%7Ekut0j91w%7E2l-null-neptune%2Fprofile%7Evanity%2Eview" class="contactInfo">Ve mi perfil de Linkedin</a>
+                </div>
+                <div class="box">
+                    <img src="img/email.svg" alt="Email" class="logo">
+                    <p class="contactInfo">Escríbeme por email: liliana.nobrega@correo.unimet.edu.ve</p>
+                </div>
+                <div class="box">
+                    <img src="img/whatsapp.svg" alt="whatsapp" class="logo">
+                    <a target="_blank" href="https://wa.me/584142752210" class="contactInfo">Escríbeme por Whatsapp: +58-4142762210</a>
+                </div>
+            </div>
         </div>
     </section>
     <script src="main.js"></script>
