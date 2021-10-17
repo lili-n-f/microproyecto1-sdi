@@ -27,3 +27,51 @@ section {
     padding: 10px;
 }
 
+.aboutMe {
+    background-color: var(--lightColor);
+    width: 70%;
+    padding: 30px;
+    margin:20px;
+    color: black;
+    line-height: 50px;
+    font-size: 1.5em;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
+    text-align: justify;
+}
+
+#aboutMe {
+    font-size: 60px;
+    font-family: 'Roboto Condensed', 'sans serif';
+    letter-spacing: 2px;
+}
+
+.aboutMeCard::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.infoAboutMe {
+    float: left;
+    width: 50%;
+}
+
+
+.myName {
+    font-family: 'Roboto Condensed', 'sans serif';
+    padding: 10px 0;
+    font-size: 45px;
+}
+
+.pictureOfMe {
+    float:right;
+    background-color: grey;
+    width: 45%;
+    height: 600px;
+    border: 1.5px solid black;
+    box-shadow: 2px 5px 5px rgba(0,0,0,0.2);
+    background-size:cover;
+    background-image: url('img/pic-ver2.jpg');
+    position: relative;
+    top: 100px;
+}
