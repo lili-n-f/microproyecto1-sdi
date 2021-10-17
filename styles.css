@@ -124,5 +124,6 @@ section {
 }
 
 .p3 .projectImageExp {
-    background-image: url('img/javaproj.png');
+    background-image: url('img/javaproj4.png');
+    background-position-x: -20px;
 }
