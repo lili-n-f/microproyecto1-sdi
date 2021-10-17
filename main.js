@@ -1,5 +1,5 @@
 const carouselImgs = [
-        'img/pic.png', 
+        'img/pic.jpg',
         'img/pyproj.png', 
         'img/pyproj2.png', 
         'img/javaproj.png', 
@@ -7,10 +7,6 @@ const carouselImgs = [
     ];
 
 let carouselIndex = 0;
-
-
-document.getElementById("back").addEventListener("click", pastImage());
-document.getElementById("forward").addEventListener("click", nextImage());
 
 function nextImage() {
     if (carouselIndex<carouselImgs.length-1){
@@ -28,10 +24,10 @@ function pastImage() {
         carouselIndex--;
     }
     renderImage();
-
 }
 
 function renderImage() {
     document.getElementById("carouselImage").style.backgroundImage = `url(${carouselImgs[carouselIndex]})`;
-    console.log("renderizar");
 }
+
+window.onload = renderImage();
