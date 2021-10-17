@@ -63,4 +63,11 @@ body {
     height: 100%;
     width: 20px;
     font-weight: bolder;
+    color: white;
+    background-color: var(--mainColor);
+}
+
+#forward:hover, #back:hover {
+    background-color: var(--complementaryColor);
+    color: black;
 }
