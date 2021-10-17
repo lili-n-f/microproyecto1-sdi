@@ -134,3 +134,111 @@ body {
     background-color: var(--complementaryColor);
     color: black;
 }
+hr {
+    border-top: 1px solid var(--mainColor);
+}
+section {
+    width:100%;
+    position:relative;
+    display:flex;
+    justify-content: center;
+    align-content: center;
+    padding: 10px;
+}
+
+.experience {
+    background-color: var(--lightColor);
+    width: 70%;
+    padding: 30px;
+    margin:20px;
+    color: black;
+    line-height: 50px;
+    font-size: 1.5em;
+    counter-reset: projectNumber;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
+}
+
+#experience {
+    font-size: 60px;
+    font-family: 'Roboto Condensed', 'sans serif';
+    letter-spacing: 2px;
+}
+
+.project::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.projectInfo {
+    float: left;
+    width: 55%;
+}
+
+.projectTitle {
+    font-family: 'Roboto Condensed', 'sans serif';
+    padding: 10px 0;
+}
+
+.projectTitle::before {
+    counter-increment: projectNumber;
+    content: counter(projectNumber) ". ";
+}
+
+.projectTech::before {
+    content: "Tecnología utilizada: ";
+    font-weight: 600;
+    padding: 0 30px;
+}
+
+.projectDate::before {
+    font-weight: 600;
+    padding: 0 30px;
+    content: "Fecha de ejecución: ";
+}
+
+.projectLink {
+    text-decoration: none;
+}
+
+.projectLink:link {
+    color:var(--complementaryColor);
+}
+
+.projectLink:visited {
+    color:var(--mainColor);
+}
+
+.projectLink:hover {
+    text-decoration: underline;
+}
+
+.beforeProjectLink {
+    text-decoration: none;
+    font-weight: 600;
+    padding-left: 30px;
+    color: black;
+    display: inline-block;
+}
+
+.projectImageExp {
+    float:right;
+    background-color: grey;
+    width: 45%;
+    height: 400px;
+    border: 1.5px solid black;
+    box-shadow: 2px 5px 5px rgba(0,0,0,0.2);
+    background-size:cover;
+}
+
+.p1 .projectImageExp {
+    background-image: url('img/pyproj3.png');
+}
+
+.p2 .projectImageExp {
+    background-image: url('img/javaproj3.png');
+}
+
+.p3 .projectImageExp {
+    background-image: url('img/javaproj.png');
+}
