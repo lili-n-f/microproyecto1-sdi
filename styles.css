@@ -83,26 +83,28 @@ section {
     text-shadow: 0.5px 0.5px 0.5px rgba(0,0,0,0.8);
 }
 
-.progPy {
+/*las barras se terminan con javascript*/
+
+#progPy {
     background-color: royalblue;
-    width: 90%;
+    /*width: 90%;*/
 }
 
-.progJ {
+#progJ {
     background-color: orange;
-    width: 80%;
+    /*width: 80%;*/
 }
 
-.progHTML {
+#progHTML {
     background-color: orangered;
-    width: 65%;
+    /*width: 65%;*/
 }
 
-.progCSS {
+#progCSS {
     background-color:slateblue;
-    width:65%;
+    /*width:65%;*/
 }
-.progJS {
+#progJS {
     background-color: rgb(255, 217, 0);
-    width: 55%;
+    /*width: 55%;*/
 }
