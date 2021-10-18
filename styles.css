@@ -159,7 +159,7 @@ section {
     box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
 }
 
-.aboutMe, .skills {
+.aboutMe {
     background-color: var(--lightColor);
     width: 70%;
     padding: 30px;
@@ -171,7 +171,18 @@ section {
     box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
 }
 
-#experience, #aboutMe, #skills {
+.contactMe,.skills {
+    background-color: var(--lightColor);
+    width: 70%;
+    padding: 30px;
+    margin:20px;
+    color: black;
+    line-height: 50px;
+    font-size: 1.5em;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
+}
+
+#experience, #aboutMe, #skills, #contactMe {
     font-size: 60px;
     font-family: 'Roboto Condensed', 'sans serif';
     letter-spacing: 2px;
@@ -340,3 +351,53 @@ section {
     background-color: rgb(255, 217, 0);
     /*width: 55%;*/
 }
+
+.contactForm, .otherContactInfo {
+    width: 70%;
+    margin:auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contactForm p {
+    color: rgba(0,0,0,0.4);
+    font-size: 15px;
+}
+
+#nameInput, #emailInput {
+    display: block;
+    height: 30px;
+    padding: 0px 5px;
+    border-radius: 5px;
+}
+
+textarea {
+    display: block;
+    resize: none;
+    padding: 5px 5px;
+    border-radius: 5px;
+}
+
+#submitButton {
+    cursor: pointer;
+    align-self: flex-end;
+    font-size: 25px;
+    margin-top: 30px;
+    background-color: var(--mainColor);
+    padding: 5px 10px;
+    color:white;
+    border: none;
+    border-radius: 5px;
+}
+
+#submitButton:hover {
+    background: var(--complementaryColor);
+}
+.otherContactInfo .contactInfo {
+    display: block;
+    text-align: center;
+    float:right;
+}
+
+
