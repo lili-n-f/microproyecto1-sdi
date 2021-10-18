@@ -89,6 +89,7 @@ textarea {
 .otherContactInfo .contactInfo {
     display: block;
     text-align: center;
+    float:right;
 }
 
 .box {
