@@ -17,13 +17,3 @@ function validateForm() {
     }
 
 }
-
-function isNotAlphabetic(string){ //si algún caracter NO es alfabético, entonces no es alfabético y se devuelve true. de lo contrario si no hay caracteres no alfabéticos y no todos los caracteres son espacios, es false. si todos son espacios es true
-    const arr = string.split("");
-    for (const char in arr){
-        if (!(/[a-zA-Z]/.test(char))){
-            return true;
-        }
-    }
-    return false;
-}
